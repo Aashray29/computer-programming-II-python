@@ -1,0 +1,5 @@
+s = input("enter the string : ")
+j = s.lower()
+print("the length of string is:", len(s))
+print("count of consonants is:", len(s) - (j.count('a') + j.count('e') + j.count('i') + j.count('o') + j.count('u') + j.count(' ')))
+print("count of vowels is:", j.count('a') + j.count('e') + j.count('i') + j.count('o') + j.count('u'))
