@@ -1,18 +1,8 @@
-date1 =  input("enter your date (dd/mm/yyyy) :").split("/")
-lst = list(date1)
-dict1 = {
-    "01" : "jan",
-    "02" : "feb",
-    "03" : "march",
-    "04" : "april",
-    "05" : "may",
-    "06" : "jun",
-    "09" : "sept",
-    "10" : "oct",
-    "11" : "nov",
-    "12" : "dec"
+def sum_avg(m1,m2,m3,m4,m5):
+    total = m1 + m2 + m3 + m4 + m5
+    avg = total / 5
 
-}
-mon = dict1[lst[1]]
+    return("total :",total  , "avg: ",avg)
 
-print(f"{lst[0]}/{mon}/{lst[2]}")
+m1,m2,m3,m4,m5 = map(int , input("enter 5 subjects marks : ").split())
+print(sum_avg(m1,m2,m3,m4,m5))

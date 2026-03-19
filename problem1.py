@@ -1,8 +1,13 @@
-s1 = {'math' , 'physics' , 'chemistry'} 
-s2 = {'physics' , 'biology' , 'math'}
-common = s1 & s2
+def count_lower_upper(str):
+    count = 0
+    for i in str:
+        if i>='A' and i <='Z':
+            count += 1
 
-print(common)
-print(s1 - s2)
-print( s2 - s1)
-print( s2 | s1)
+    return {"count of uppper is : " : count ,
+             "and count of lower is : " : len(str) - count - str.count(" ")}
+            
+
+str = input("enter the string  :")
+
+print(count_lower_upper(str))
